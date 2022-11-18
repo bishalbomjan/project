@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <style>
+        main{
+            background-color: #FAFAFA;
+        }
+        table{
+            align-items: center;
+            background-color: #FFFFFF;
+            width: 80%;
+            
+        }
+        .center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.hh{
+            padding-top: 2rem;
+            margin: auto;
+            text-align: left;
+            color: white;
+            font-weight: bold;
+        }
+        tr,th{
+            border-bottom: 1px soild #a2c5c7;
+            padding: 2rem;
+    text-align: left;
+    padding: 1rem;
+        }
+        td{
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body style="margin: 0rem 4rem;">
+    <header>
+        <div class="top">
+            <p style="padding-left: 20px;">Notices, events, result, etc. <span style="background-color:red ;border-radius: 5px;">View</span> <span style="float: right;margin-right: 3rem ;">+977-1-4330844, +977-1-4331755, +977-1-4330120(Exam)</span></p>
+        </div>
+        <div class="header">
+            <img class="logo" src="{% static 'images/logo.png' %}" alt="logo">
+            <h1 class="hh">Office of the Dean<br>
+            Institute of Science and Technology <br>
+            Tribhuvan University</h1>
+        </div>        
+        
+        <nav>
+            <a href="/">HOME</a>
+            <a href="{% url 'aboutus' %}">ABOUT US</a>
+            <a href="{% url 'notice' %}">NOTICE</a>
+            <a href="{% url 'college' %}">COLLEGES</a>
+            <a href="{% url 'program' %}">OUR PROGRAMS</a>
+        </nav>
+        </header>
+        <main>
+            <h1 style="text-align: center; font-weight:lighter">
+                Constituent Colleges
+            </h1>
+            <table class="center"> 
+                <tr>
+                    <th>
+                       S.N 
+                    </th>
+                    <th>Name of the Campuses</th>
+                    <th>Address</th>
+                    <th>B.Sc.</th>
+                    <th>M.Sc.</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Mechi Multiple Campus</td>
+                    <td>Bhadrapur, Jhapa</td>
+                    <td>General (including Env. Sc, Tea Technology) CSIT</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Dhankuta Multiple Campus</td>
+                    <td>Dhankuta</td>
+                    <td>General (including Env. Sc.)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Central Campus of Technology</td>
+                    <td>Dharan</td>
+                    <td>General (including Microbiology, Nutrition & Dietetics, Geology)
+
+                        B. Tech. (Food), BIT, BSc.CSIT</td>
+                    <td>Microbiology
+
+                        M. Tech. (Food)</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Mahendra Morang Adarsha Multiple Campus</td>
+                    <td>Biratnagar</td>
+                    <td>General (including Microbiology),, CSIT, BIT</td>
+                    <td>Physics, Chemistry</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Post Graduate Campus</td>
+                    <td>Biratnagar</td>
+                    <td></td>
+                    <td>Botany, Zoology, Math</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Mahendra Bindeshwori Multiple Campus</td>
+                    <td>Rajbiraj</td>
+                    <td>General (including Microbiology)
+
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Surya Narayan Satya Na. Mo. Yadav Campus</td>
+                    <td>Siraha</td>
+                    <td>General (including Env. Sc)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Ramsorup Ramsagar Multiple Campus</td>
+                    <td>Janakpur</td>
+                    <td>General (including Microbiology, Env. Sc.), CSIT, BIT</td>
+                    <td>Math</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Thakur Ram Multiple Campus</td>
+                    <td>Birgunj</td>
+                    <td>General, BIT</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Birendra Multiple Campus</td>
+                    <td>Bharatpur</td>
+                    <td>General (including Microbiology, Geology), CSIT, BIT</td>
+                    <td>Physics, Chemistry</td>
+                </tr>
+            </table>
+        </main>
+        <footer style="text-align: center;color:#FFFFFF;background-color:#2C3E50;">
+            &copy;2022 - All Rights Reserved<br>
+            tuiost.edu.np
+        </footer>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            text-align: center;
+            padding-bottom: 4rem;
+        }
+        img{
+            float: left;
+            padding-right: 3rem;
+        }
+        a{
+            padding: 8px;
+            color: black;
+            text-decoration: none;
+        }
+        nav{
+            height: 1.5rem ;            text-align: center;
+            background-color: rgb(213, 16, 16);
+        }
+        .header{
+            
+            background-color: dodgerblue;
+            height: 15rem;
+        }
+        .logo{
+            float: left;
+            height: 10rem;
+            margin: 2rem;
+        }
+        .hh{
+            padding-top: 2rem;
+            margin: auto;
+            text-align: left;
+            color: white;
+            font-weight: bold;
+        }
+        .top{
+            background-color: blue;
+            color: white;
+            height: 3rem;
+            padding-top: 1px;
+            text-align: left;
+            
+        }
+        a{
+            padding: 8px;
+            color: black;
+            text-decoration: none;
+        }
+        h1{
+            font-weight: lighter;
+        }
+        .container1{
+            padding-top: 10rem;
+        }
+        p{
+            color: #908080;
+        }
+            </style>
+</head>
+<body style="margin: 0rem 4rem;">
+    <header>
+            <div class="top">
+                <p style="color: white;">Notices, events, result, etc. <span style="background-color:red ;border-radius: 5px;">View</span> <span style="float: right;margin-right: 3rem ;">+977-1-4330844, +977-1-4331755, +977-1-4330120(Exam)</span></p>
+            </div>
+            <div class="header">
+                <img class="logo" src="{% static 'images/logo.png' %}" alt="logo">
+                <h1 class="hh">Office of the Dean<br>
+                Institute of Science and Technology <br>
+                Tribhuvan University</h1>
+            </div>        
+            <nav>
+                <a href="/">HOME</a>
+                <a href="{% url 'aboutus' %}">ABOUT US</a>
+                <a href="{% url 'notice' %}">NOTICE</a>
+                <a href="{% url 'college' %}">COLLEGES</a>
+                <a href="{% url 'program' %}">OUR PROGRAMS</a>
+            </nav>
+       <h1 style="font-weight: lighter;">About Us</h1> 
+        <p>Institute of Science and Technology (IoST) is one of the oldest and the largest technical institutes <br> in TU with 13 Central Departments, 1 School, 24 constituent campuses and 89 affiliated <br> campuses.</p>
+    </header>
+    <main>
+       <div> <img src="{% static 'images/tu1.jpg' %}" alt="tu photo">
+        <h1 style="font-weight: lighter;"> This Is Our Story. </h1>
+        <p> 
+Nepal has a history of nine decades of science teaching/learning at the <br>
+higher level. Several schemes, plans, policies and implementation <br>
+strategies have been experimented in science education. This institute <br> 
+has come to the present form after facing many challenges and <br>
+preparing scientifically oriented technical manpower of different levels <br>
+to meet the requirements of the nation. It is capable to compete with <br>
+universities at regional and global levels in terms of curriculum and <br>
+pedagogic standards. <br>
+A large number of students work on scientific research projects of <br>
+varied nature at the postgraduate (M.Sc.) level. The number of scholars <br> 
+doing Ph.D. in different areas is also increasing every year. Collaborative <br>
+exchange programmes in science have been given a priority. IoST and <br>
+the Central Departments have linkages and coordination with different <br>
+ministries and national/ international organizations and academic <br>
+institutions. Students enrollment at B.Sc, B.Tech, M.Sc, M. Tech. levels is 
+increasing annually.
+    </p></div>
+    <div class="container1">
+        <h1> Vision And Objectives </h1>
+            <p > 
+                By setting up well-equipped laboratories, employing skilled manpower, <br>
+                and providing advisory services in science and technology in close <br>
+                collaboration with national and international agencies, IoST intends to <br> 
+                promote the quality of its departments and develop them as Centers of <br>
+                excellence. Ultimately, it aims at creating a scientific culture in the <br>
+                society and improving the quality of life of the people.</p>
+                <div> <p> To provide facilities for research in science and technology in priority area. <br>
+                       To implement and introduce new subjects in science and technology at different departments. <br>
+                        To develop high-skilled man power and to enhance the strength of national human resources. <br>
+                      To mobilize resources for development. <br>
+                        To start international coordination programmes for training, research and development with a view to eliminate poverty of Nepal by using indigenous and local technology. <br>
+                        To organize seminars, workshops, conferences at all levels. <br>
+                       To publish the findings of research in Journal of Science and Technology, (JIST) of IOST.</p>
+        </div>
+    </main>
+    <footer style="text-align: center;color:#FFFFFF;background-color:#2C3E50;">
+        &copy;2022 - All Rights Reserved<br>
+        tuiost.edu.np
+    </footer>
+</body>
+</html>

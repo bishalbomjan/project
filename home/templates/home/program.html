@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            
+            background-color: dodgerblue;
+            height: 15rem;
+        }
+        .logo{
+            float: left;
+            height: 10rem;
+            margin: 2rem;
+        }
+        .hh{
+            padding-top: 2rem;
+            margin: auto;
+            text-align: left;
+            color: white;
+            font-weight: bold;
+        }
+        .top{
+            background-color: blue;
+            color: white;
+            height: 3rem;
+            padding-top: 1px;
+            padding-left: 15px;
+        }
+        a{
+            padding: 8px;
+            color: black;
+            text-decoration: none;
+        }
+        nav{
+            height: 1.5rem ;            text-align: center;
+            background-color: rgb(213, 16, 16);
+        }
+        .container11{
+            font-size: larger;
+            font-weight: lighter;
+            font-style: italic;
+            background-color: #FFFFFF;
+        }
+    </style>
+</head>
+<body style="margin: 0rem 4rem;background-color: #F9F9F9;">
+    <header>
+        <div class="top">
+            <p style="padding-left: 20px;">Notices, events, result, etc. <span style="background-color:red ;border-radius: 5px;">View</span> <span style="float: right;margin-right: 3rem ;">+977-1-4330844, +977-1-4331755, +977-1-4330120(Exam)</span></p>
+        </div>
+        <div class="header">
+            <img class="logo" src="{% static 'images/logo.png' %}" alt="logo">
+            <h1 class="hh">Office of the Dean<br>
+            Institute of Science and Technology <br>
+            Tribhuvan University</h1>
+        </div>        
+        
+        <nav>
+            <a href="/">HOME</a>
+            <a href="{% url 'aboutus' %}">ABOUT US</a>
+            <a href="{% url 'notice' %}">NOTICE</a>
+            <a href="{% url 'college' %}">COLLEGES</a>
+            <a href="{% url 'program' %}">OUR PROGRAMS</a>
+        </nav>
+        </header>
+        <main>
+            <div class="container11">
+                <p>The Institute of Science and Technology (IoST) is one of the pioneer technical institutes under Tribhuvan University. IoST has at present 13 Central <br> 
+                    Departments, 1 school, 24 constituent campuses and 89 affiliated campuses. This institute has been actively serving the country in the field of <br> 
+                    Science and technology as well as in research. All the Central Departments run regular Master and Ph.D. Programmes. Some campuses run both the <br> 
+                    Bachelor and Master programmes.
+                    <br>
+                    A large number of students work on scientific research projects launched in the Central Departments at M.Sc. levels. The number of scholars doing <br> 
+                    Ph. D. in different areas is increasing every year. The IoST has given high priority to collaborative exchange programme in order to make faculty, <br> 
+                    research scholars and students more competent. The Institute has enough linkage and collaboration with different ministries, national and <br> 
+                    international organizations and academic institutions to foster the research activity accordingly.</p>
+                        <h3>Vision and Objectives
+                        </h3> <hr>
+                    <p>The IoST intends to promote the quality of its departments in terms of effective teaching learning activities, research activities, quality education <br> 
+                        and to develop them as Centre of Excellence by setting up well-equipped laboratories, Libraries, employing high skilled man powers and providing <br> 
+                        advisory services in science and technology in close collaboration with national and international agencies. Recently TU Executive Council has <br> 
+                        made decision to establish the IoST as the centre of excellence under the chairmanship of the Dean. To work in this direction, a committee has been <br> 
+                        formed and a fi year strategic plan has already been made. The main objectives of the IoST are as follows:
+                     <hr>
+                     To provide sufficient infrastructure for research in IoST <hr>
+                     To introduce new subjects in science and technology at different departments and colleges <hr>
+                     To produce high-skilled knowledge based manpower <hr>
+                     To mobilize resources for research and development <hr>
+                     To organize seminar, conference, and workshop at national and international level <hr>
+                     To conduct refresher courses in each subject to make faculty academically more proficient</p> <hr>
+                     <br>
+                     <br>
+                     <h3>Recent Programmes</h3>
+                     <p>
+                     Mahendra Ratna Campus, Ilam (Eastern Nepal) has started Bachelor degree in Horticulture and Floriculture since 2012. <hr>
+B.Sc. programme has been changed into 4 year programme since 2012. <hr>
+Central Departments of Mathematics, Microbiology, Statistics and Environmental science have started semester system since 2012 while Physics, Chemistry, Zoology, Botany, Geology and Hydrology & Meteorology have started semester system since 2014. <hr>
+All M.Sc. programmes inside and outside the valley are run in Semester System from 2014-15. </p> <hr>
+            </div>
+        </main>
+        
+        <footer style="text-align: center;color:#FFFFFF;background-color:#2C3E50;">
+            &copy;2022 - All Rights Reserved<br>
+            tuiost.edu.np
+        </footer>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <style>
+        .header{
+            
+            background-color: dodgerblue;
+            height: 15rem;
+        }
+        .logo{
+            float: left;
+            height: 10rem;
+            margin: 2rem;
+        }
+        .hh{
+            padding-top: 2rem;
+            margin: auto;
+            text-align: left;
+            color: white;
+            font-weight: bold;
+        }
+        .top{
+            background-color: blue;
+            color: white;
+            height: 3rem;
+            padding-top: 1px;
+            padding-left: 15px;
+        }
+        a{
+            padding: 8px;
+            color: black;
+            text-decoration: none;
+        }
+        nav{
+            height: 1.5rem ;            text-align: center;
+            background-color: rgb(213, 16, 16);
+        }
+        h1{
+            text-align: center;
+        }
+       
+        main{
+            background: url( 'static/images/bg.jpg' )50% 0 no-repeat fixed;
+            padding-bottom: calc(var(--padding-vertical) + 4 rem);
+            clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+     color: white;
+     height: 650px;
+     padding: 100px 0 0 0;   
+        }
+        .pg{
+            
+            font-size: large;
+        }
+        .tech{
+            float: left;
+            height:20rem;
+            padding: 3rem;
+            margin-left:  5rem;
+        }
+        .message{
+            margin: 0rem 8rem;
+            font-size: large;
+            font-style: italic;
+            margin-bottom: 5rem;
+        }
+        p{
+            font-style: italic;
+        }
+        li a{
+            color: dodgerblue;
+            line-height: 1.6em ;
+        }
+        h1{
+            font-weight: lighter;
+        }
+    </style>
+</head>
+<body style="margin: 0rem 4rem;">
+    <header>
+        <div class="top">
+            <p style="color: white;">Notices, events, result, etc. <span style="background-color:red ;border-radius: 5px;">View</span> <span style="float: right;margin-right: 3rem ;">+977-1-4330844, +977-1-4331755, +977-1-4330120(Exam)</span></p>
+        </div>
+        <div class="header">
+            <img class="logo" src="{% static 'images/logo.png' %}" alt="logo">
+            <h1 class="hh">Office of the Dean<br>
+            Institute of Science and Technology <br>
+            Tribhuvan University</h1>
+        </div>        
+        <nav>
+            <a href="/">HOME</a>
+            <a href="{% url 'aboutus' %}">ABOUT US</a>
+            <a href="{% url 'notice' %}">NOTICE</a>
+            <a href="{% url 'college' %}">COLLEGES</a>
+            <a href="{% url 'program' %}">OUR PROGRAMS</a>
+            
+        </nav>
+   
+</header>
+            <main>
+                <h1 >
+                    Institute of Science and <br>Technology
+                </h1>
+                <p style="text-align: center;
+                font-size: 29px;">Institute of Science and Technology(IoST) is one of the <br>oldest and the largest technical institutes in TU with 13 <br> Central Departments, 1 School, 24 constituent <br> campuses and 89 affiliated campuses.</p>
+                
+            </main>
+            <div>
+                <h1>About Us</h1>
+                
+                <img src="{% static 'images/tech.jpg' %}" alt="" class="tech">
+                <p class="pg">Institute of Science and Technology (IoST) is one of the oldest and the <br> 
+                    largest technical institutes in TU with 13 Central Departments,1 <br>
+                    School, 24 constituent campuses and 89 affiliated campuses. Nepal has <br> 
+                    a history of nine decades of science teaching/learning at the higher <br> 
+                    level. Several schemes, plans, policies and implementation strategies <br> 
+                    have been experimented in science education. This institute has come <br> 
+                    to the present form after facing many challenges and preparing <br> 
+                    scientifically oriented technical manpower of different levels to meet <br> 
+                    the requirements of the nation. It is capable to compete with <br> universities at regional and global levels in terms of curriculum and <br> 
+                    pedagogic standards. A large number of students work on scientific <br> 
+                    research projects of varied nature at the postgraduate (M.Sc.) level. <br> 
+                    The number of scholars doing Ph.D. in different areas is also <br> 
+                    increasing every year. Collaborative exchange programmes in science have been given a priority. IoST and the Central Departments have <br> 
+                    linkages and coordination with different ministries and national/ <br> 
+                    international organizations and academic institutions. Students’ <br> 
+                    enrollment at B.Sc, B.Tech, M.Sc, M. Tech. levels is increasing <br> annually.</p></div>
+                    <h1 style="margin-top: 15rem;margin-bottom:2rem;">Message from the Dean</h1>
+                    <p class="message">
+                        The office of the Dean, Institute of Science and Technology (IOST), Tribhuvan University seeks to facilitate the integration of the academic experience of the faculties and students and to provide updates to the plans and strategies to research and teaching methods. The Dean's office coordinates with Heads of the Central Departments and Campus Chiefs of the related campuses to prepare and execute strategies for enhancement of the academic activities, to implement curriculum effectively and to ensure its standards. It always tries to create better environment for standardizing teaching learning activities and qualitative improvement of research activities.
+                        The office aims to design local communication programs and other partnership agreements and make relations to the companies, organizations and institutions which can provide services for the graduates from this institute. It also tries to make friendly relations to the different Institutes and Faculties of Tribhuvan University as well as that of the other universities.
+                        The office is committed to improve the evaluation system and manage well over the examination conducted by IOST. It makes arrangement of various site visits for monitoring affiliated academic programs, examinations, internship programs and other relevant activities coordinating with Heads of the subject committees, subject experts, and staff members. The office is dedicated to build strong relationships with fellow workers and team members. It tries to administer and ensure smooth working of staff and training activities.
+                        As Dean, I express my commitment for the highest quality in the Bachelor, Master, M. Phil. and Ph.D. programs and promise that these programs will be further improved on a foundation of excellence and innovation.
+                        
+                        Thank You.</p>
+                        <h1 style="text-align: left;">News and Event</h1>
+                        <ul style="list-style:inside ;">
+                            <li><a href="{% static 'notice/1.pdf' %}" download=""> M.Sc. IV Semester -075 Make Up Exam Centre Notice 31st Jul, 2022</a></li>
+                            <li><a href="{% static 'notice/2.pdf' %}" download=""> बाैद्धिक चाेरी परीक्षण अनिवार्य गरिएकाे बारे । 29th Jul, 2022</a></li>
+                            <li><a href="{% static 'notice/3.pdf' %}" download="">नवीकरण शुल्क सम्बन्धमा । 27th Jul, 2022</a></li>
+                            <li><a href="{% static 'notice/4.pdf' %}" download="">B.Sc.CSIT IV Semester-076 Exam Center Notice 24th Jul, 2022</a></li>
+                            <li><a href="{% static 'notice/5.pdf' %}" download="">B.Sc.CSIT VIII Semester-074 Exam Centre Notice 24th Jul, 2022</a> </li>
+                            <li><a href="{% static 'notice/6.pdf' %}" download=""> छात्रवृत्ति सूची सच्याइएकाे बारे 20th Jul, 2022</a></li>
+                            <li><a href="{% static 'notice/7.pdf' %}" download=""> M.Sc. Chemistry III Semester 076 Exam Centre Notice 20th Jul, 2022</a></li>
+                            <li><a href="{% static 'notice/8.pdf' %}" download="">  जेहेन्दार छात्रवृत्ति सम्बन्धी सूचना 19th Jul, 2022</a></li>
+                            <li><a href="{% static 'notice/9.pdf' %}" download="">  BIT I Semester -078 Exam Form Filling Notice 14th Jul, 2022</a></li>
+                            <li><a href="{% static 'notice/10.pdf' %}" download="">  B.Math.Science III Sem.2077, IV sem.076 & VII sem.075 Exam Form Filling Notice 14th Jul, 2022</a></li>
+                            <li><a href="{% static 'notice/11.pdf' %}" download=""> Master in Data Science II semester-077 Exam Form Filling Notice 14th Jul, 2022</a></li>
+                            <li><a href="{% static 'notice/12.pdf' %}" download=""> छात्रवृत्ति सम्बन्धी कार्यनिर्देशिका पठाइएकाे बारे 14th Jul, 2022</a></li>
+                        </ul>
+            <footer >
+                &copy;2022 - All Rights Reserved<br>
+                tuiost.edu.np
+            </footer>
+</body>
+</html>
